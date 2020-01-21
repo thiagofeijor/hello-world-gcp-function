@@ -1,0 +1,14 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args: ['-C', './simple-ts-update-file/deploy.sh']
+
+- name: gcr.io/cloud-builders/gcloud
+  args: [
+      'beta',
+      'functions',
+      'deploy','${_NAME}',
+      '--source=./dist',
+      '--entry-point=upload',
+      '--project=${PROJECT_ID}',
+  ]

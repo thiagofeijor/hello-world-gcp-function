@@ -1,0 +1,17 @@
+{
+  "name": "sav-rom-banker-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=upload",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.3.2",
+    "@google-cloud/storage": "^4.1.1",
+    "busboy": "^0.3.1"
+  }
+}

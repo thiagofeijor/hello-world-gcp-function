@@ -1,0 +1,22 @@
+{
+  "name": "sav-rom-banker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && cp ./package.json ../dist && cd ../dist && yarn install && functions-framework --target=upload",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^4.1.1",
+    "busboy": "^0.3.1"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.3.2",
+    "@google-cloud/storage": "^4.1.1",
+    "@types/busboy": "^0.2.3",
+    "typescript": "^3.7.2"
+  }
+}
